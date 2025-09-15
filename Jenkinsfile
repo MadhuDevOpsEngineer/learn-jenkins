@@ -5,6 +5,8 @@ pipeline {
         }
     }
         environment {
+
+
             GREETINGS = "Hello Jenkins"
         }
 
@@ -16,7 +18,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                echo 'Testing..webhook'
             }
         }
         stage('Deploy') {
