@@ -23,3 +23,16 @@ pipeline {
         }
     }
 }
+
+    post {
+        always {
+            echo "i will alwasy echo"
+        }
+        failure {
+            echo "this runs when pipeline is failed"
+        }
+        success {
+            echo "this runs when pipeline is success"
+        }
+    }
+}
