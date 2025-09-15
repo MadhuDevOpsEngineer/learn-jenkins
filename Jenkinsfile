@@ -3,10 +3,10 @@ pipeline {
         node {
             label 'agent-1'
         }
-        environment {
-            GREETINGS = 'Hello Jenkins'
-        }
     }
+        environment {
+            GREETINGS = "Hello Jenkins"
+        }
 
     stages {
         stage('Build') {
@@ -23,7 +23,7 @@ pipeline {
             steps {
                 sh """
                  echo "here i wrote shellscript"
-                 echo "$env.GREETINGS"
+                 echo "$GREETINGS"
 
                 """
             }
