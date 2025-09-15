@@ -22,7 +22,6 @@ pipeline {
             }
         }
     }
-}
 
     post {
         always {
@@ -35,3 +34,4 @@ pipeline {
             echo "this runs when pipeline is success"
         }
     }
+}
